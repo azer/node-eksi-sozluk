@@ -1,0 +1,31 @@
+{
+  "name": "eksi-sozluk",
+  "version": "0.0.0",
+  "description": "NodeJS client to query Eksi Sozluk",
+  "main": "index.js",
+  "bin": {
+    "eksi-sozluk": "./bin/eksi-sozluk"
+  },
+  "scripts": {
+    "test": "fox"
+  },
+  "dependencies": {
+    "request": "*",
+    "new-format": "0.0.1",
+    "anglicize": "0.0.0",
+    "debug": "~0.7.2",
+    "new-range": "0.0.0",
+    "optimist": "~0.3.5",
+    "cli-color": "~0.2.2",
+    "dateformat": "~1.0.6-1.2.3"
+  },
+  "devDependencies": {
+    "fox": "*"
+  },
+  "repository": {
+    "url": "git@github.com:azer/node-eksi-sozluk.git",
+    "type": "git"
+  },
+  "author": "Azer Koçulu <azer@kodfabrik.com>",
+  "license": "BSD"
+}

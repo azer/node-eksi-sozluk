@@ -1,0 +1,11 @@
+
+    KULLANIM
+
+        eksi-sozluk [baslik] [secenekler]
+
+    SECENEKLER
+
+        -f    --from       Bu siradaki entry'den itibaren getir.
+        -t    --to         Bu siradaki entry'ye kadar getir.
+        -v    --version    Surumu goster ve cik.
+        -h    --help       Yardimi goster ve cik.
