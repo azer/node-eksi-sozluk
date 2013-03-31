@@ -10,6 +10,8 @@ $ npm install eksi-sozluk
 
 ### Command-line
 
+![](https://dl.dropbox.com/s/rc2wrv02gpkirj0/eksi.png)
+
 ### API
 
 ```js
