@@ -1,6 +1,6 @@
 {
   "name": "eksi-sozluk",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "NodeJS client to query Eksi Sozluk",
   "main": "index.js",
   "bin": {
