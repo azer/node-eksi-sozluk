@@ -1,3 +1,5 @@
-var entries = require("./lib/entries");
+var entries     = require("./lib/entries"),
+    suggestions = require('./lib/suggestions');
 
-module.exports = entries;
+exports = module.exports = entries;
+exports.suggestions = suggestions;

@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 
 var opt        = require('optimist'),
-    theme      = require('cli-color'),
-    dateFormat = require('dateformat'),
-
+    cli        = require('../lib/cli'),
     help       = require('../lib/help'),
-    version    = require('../lib/version'),
-    sozluk     = require('../');
+    version    = require('../lib/version');
 
 var argv = opt
+      .options('suggest', { alias: 's' })
       .options('from', { alias: 'f' })
       .options('to', { alias: 't' })
       .options('version', { alias: 'v' })
@@ -18,36 +16,13 @@ var argv = opt
 if(argv.help || !argv._.length) help();
 if(argv.version) version();
 
+if(argv.suggest) cli.suggestions(argv._.join(' '));
+
 var options = { title: argv._.join(' ') };
 
 if(argv.from) options.from = argv.from;
 if(argv.to) options.to = argv.to;
 
-sozluk(options, function(error, result){
 
-  if(error) throw error;
 
-  var output;
-
-  output = '\u001B[2J\u001B[0;0f'
-    + '\n     '
-    + theme.bold(result.title)
-    + '\n\n';
-
-  output += result.entries
-    .map(function(entry){
-
-      return '        '
-        + entry.content
-        + '\n        '
-        + theme.blackBright( dateFormat(new Date(entry.ts), 'mmmm dS, yyyy') + ' @' + entry.author)
-    })
-    .reduce(function(a, b){
-      return a + '\n\n\n' + b;
-    });
-
-  output += '\n\n';
-
-  process.stdout.write(output);
-
-});
+cli.entries(options);

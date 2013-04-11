@@ -33,4 +33,17 @@ sozluk('finike portakalı', function(error, result){
 
 ```
 
+#### Suggestions
+
+```js
+sozluk.suggestions('linux', function(error, results){
+
+    results[1]
+    // => linux oyunları
+
+    results[3]
+    // => linux ile windows karşılaştırması
+});
+```
+
 ![](http://distilleryimage2.s3.amazonaws.com/3e14d1ae8e4711e2af7822000a1fb04e_6.jpg)
