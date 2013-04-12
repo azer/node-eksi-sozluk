@@ -6,6 +6,7 @@ var opt        = require('optimist'),
     version    = require('../lib/version');
 
 var argv = opt
+      .options('rev', { alias: 'r' })
       .options('suggest', { alias: 's' })
       .options('from', { alias: 'f' })
       .options('to', { alias: 't' })
@@ -23,6 +24,4 @@ var options = { title: argv._.join(' ') };
 if(argv.from) options.from = argv.from;
 if(argv.to) options.to = argv.to;
 
-
-
-cli.entries(options);
+( argv.rev ? cli.newEntries : cli.entries )(options);

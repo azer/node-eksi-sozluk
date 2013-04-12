@@ -5,6 +5,8 @@
 
     SECENEKLER
 
+        -r    --rev        Yeniden eskiye dogru listele.
+        -s    --suggest    Verilen kelimeler icin baslik onerileri getir.
         -f    --from       Bu siradaki entry'den itibaren getir.
         -t    --to         Bu siradaki entry'ye kadar getir.
         -v    --version    Surumu goster ve cik.
