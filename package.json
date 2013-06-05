@@ -16,9 +16,11 @@
     "debug": "~0.7.2",
     "new-range": "0.0.0",
     "optimist": "~0.3.5",
-    "cli-color": "~0.2.2",
+    "styled": "0.x",
     "dateformat": "~1.0.6-1.2.3",
-    "strip": "*"
+    "strip": "*",
+    "show-version": "0.0.0",
+    "show-help": "0.0.0"
   },
   "devDependencies": {
     "fox": "*"

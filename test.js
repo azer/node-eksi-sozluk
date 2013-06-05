@@ -28,7 +28,7 @@ it('returns entries with title, date and author fields', function(done){
     expect(result.entries[5].author).to.equal('mysterious');
 
     expect(result.entries[0].content)
-      .to.equal("finike'de ve finike çevresinde yetiştirilen iri, sulu washington portakalı.");
+      .to.equal("[finike](/finike)'de ve finike çevresinde yetiştirilen iri, sulu [washington portakalı](/washington portakal%c4%b1).");
 
     done();
 
@@ -54,6 +54,7 @@ it('returns first 10 entries by default', function(done){
 
 });
 
+
 it('returns entries in a specified range', function(done){
 
   sozluk({ title: 'kalkan', from: 15, to: 37 }, function(error, result){
@@ -61,10 +62,10 @@ it('returns entries in a specified range', function(done){
     expect(error).to.not.exist;
 
     expect(result.title).to.equal('kalkan');
-    expect(result.entries.length).to.equal(23);
+    expect(result.entries.length).to.equal(22);
 
     expect(result.entries[0].author).to.equal('putperest');
-    expect(result.entries[22].author).to.equal('janissarie');
+    expect(result.entries[21].author).to.equal('janissarie');
 
     done();
 

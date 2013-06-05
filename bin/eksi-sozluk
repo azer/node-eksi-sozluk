@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
 var opt        = require('optimist'),
-    cli        = require('../lib/cli'),
-    help       = require('../lib/help'),
-    version    = require('../lib/version');
+    cli        = require('../lib/cli');
 
 var argv = opt
       .options('rev', { alias: 'r' })
@@ -14,8 +12,9 @@ var argv = opt
       .options('help', { alias: 'h' })
       .argv;
 
-if(argv.help || !argv._.length) help();
-if(argv.version) version();
+if(argv.version) require('show-version');
+
+if(argv.help || !argv._.length) require('show-help');
 
 if(argv.suggest) cli.suggestions(argv._.join(' '));
 
