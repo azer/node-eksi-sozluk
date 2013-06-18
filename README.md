@@ -43,7 +43,29 @@ sozluk({ title: 'finike portakalı', from: 25, to: 75 }, function(error, result)
     // => 50
     
 })
-````
+```
+
+To fetch specific pages:
+
+```js
+sozluk.page('finike', 3, function(error, result){
+    
+    result.entries.length
+    // => 10
+    
+})
+```
+
+To get the number of the pages a topic has:
+
+```js
+sozluk.pageCount('finike', function(error, result){
+    
+    result
+    // => 7
+    
+})
+```
 
 #### Suggestions
 
