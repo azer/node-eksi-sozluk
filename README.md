@@ -33,6 +33,18 @@ sozluk('finike portakalı', function(error, result){
 
 ```
 
+#### More Options
+
+
+```js
+sozluk({ title: 'finike portakalı', from: 25, to: 75 }, function(error, result){
+    
+    result.entries.length
+    // => 50
+    
+})
+````
+
 #### Suggestions
 
 ```js
@@ -45,5 +57,7 @@ sozluk.suggestions('linux', function(error, results){
     // => linux ile windows karşılaştırması
 });
 ```
+
+
 
 ![](http://distilleryimage2.s3.amazonaws.com/3e14d1ae8e4711e2af7822000a1fb04e_6.jpg)
