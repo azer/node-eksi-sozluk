@@ -5,7 +5,7 @@ describe('url', function(){
 
   it('returns URL for given topic titles', function(){
 
-    expect(url('çığ-öşü', 0)).to.equal('http://eksisozluk.com/%C3%A7%C4%B1%C4%9F-%C3%B6%C5%9F%C3%BC?p=0');
+    expect(url('çığ-öşü', 0)).to.equal('https://eksisozluk.com/%C3%A7%C4%B1%C4%9F-%C3%B6%C5%9F%C3%BC?p=0');
 
   });
 
@@ -28,7 +28,7 @@ it('returns entries with title, date and author fields', function(done){
     expect(result.entries[5].author).to.equal('mysterious');
 
     expect(result.entries[0].content)
-      .to.equal("[finike](/finike)'de ve finike çevresinde yetiştirilen iri, sulu [washington portakalı](/washington portakal%c4%b1).");
+      .to.equal("[finike](/finike)'de ve finike çevresinde yetiştirilen iri, sulu [washington portakalı](/washington+portakal%c4%b1).");
 
     done();
 
