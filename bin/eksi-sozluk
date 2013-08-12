@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-var opt        = require('optimist'),
-    cli        = require('../lib/cli');
+var opt = require('optimist'),
+    cli = require('../lib/cli');
 
 var argv = opt
       .options('rev', { alias: 'r' })
