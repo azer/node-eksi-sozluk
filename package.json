@@ -7,7 +7,7 @@
     "eksi-sozluk": "./bin/eksi-sozluk"
   },
   "scripts": {
-    "test": "fox"
+    "test": "fox -t 5000"
   },
   "dependencies": {
     "request": "*",
