@@ -1,4 +1,4 @@
-## eksi-sozluk
+## eksi-sozluk [![Build Status](https://travis-ci.org/azer/node-eksi-sozluk.png?branch=master)](https://travis-ci.org/azer/node-eksi-sozluk)
 
 NodeJS client to query Eksi Sozluk
 
