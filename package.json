@@ -10,7 +10,6 @@
     "test": "fox -t 5000"
   },
   "dependencies": {
-    "request": "*",
     "new-format": "0.0.1",
     "anglicize": "0.0.0",
     "debug": "~0.7.2",
